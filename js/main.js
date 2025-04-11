@@ -1,15 +1,14 @@
-const carousel = document.getElementById('carousel');
-
-let index = 0;
-const slides = carousel.children;
-
-function moveToSlide(index) {
-    const width = slides[0].offsetWidth;
-    carousel.style.transform = `translateX(-${index * width}px)`;
-}
-
-// Optional: Autoplay functionality
-setInterval(() => {
-    index = (index + 1) % slides.length;
-    moveToSlide(index);
-}, 3000); // Change slide every 3 seconds
+const swiper = new Swiper('.swiper', {
+    loop: true, 
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    centeredSlides: true,
+    // autoplay: {
+    //   delay: 3000,
+    //   disableOnInteraction: false,
+    // },
+    slidesPerView: 1,
+    spaceBetween: 30,
+})

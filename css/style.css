@@ -104,7 +104,7 @@ body {
 
 .skills:before {
     content: '';
-    background: url('../img/skills-bg.jpg') no-repeat center/cover;      
+    background: url('../img/skilss-bg.jpg') no-repeat center/cover;     
     opacity: 0.2;
     position: absolute;
     z-index: -1;
@@ -144,15 +144,4 @@ body {
 
 .skills__block-web {
     box-shadow: -10px 0 2px 0 #0C73B8;;
-}
-
-.works:before {
-    content: '';
-    background: url('../img/works-bg.jpg') no-repeat center/cover;      
-    opacity: 0.2;
-    position: absolute;
-    z-index: -1;
-    top: 0; left: 0; right: 0; bottom: 0;
-    width: 100%;
-    height: 100%;
 }
