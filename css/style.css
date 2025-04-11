@@ -47,7 +47,34 @@ body {
     background-color: #292F36;
     color: #ececec;
     font-weight: 400;
+    opacity: 0;
+    animation: pageFadeIn 0.5s ease-in-out forwards;
 }
+
+@keyframes pageFadeIn {
+    to {
+      opacity: 1;
+    }
+}
+
+section {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.2s ease, transform 0.5s ease;
+}
+
+section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+h1, h2 {
+    margin-bottom: 1rem;
+}
+p {
+  line-height: 1.6;
+}
+
 
 .contain {
     padding: 0 128px;
@@ -63,6 +90,10 @@ body {
     color: #12F7D6;
 }
 
+.bg-3 {
+    background: #12F7D6;
+}
+
 .color-brand-2 {
     color: #98FAEC;
 }
@@ -73,6 +104,10 @@ body {
 
 .ubuntu {
     font-family: 'Ubuntu', sans-serif;
+}
+
+.bg-2 {
+    background-color: #1A1E23;
 }
 
 .hero__bio {
@@ -104,7 +139,7 @@ body {
 
 .skills:before {
     content: '';
-    background: url('../img/skilss-bg.jpg') no-repeat center/cover;     
+    background: url('../img/skills-bg.jpg') no-repeat center/cover;     
     opacity: 0.2;
     position: absolute;
     z-index: -1;
@@ -145,3 +180,19 @@ body {
 .skills__block-web {
     box-shadow: -10px 0 2px 0 #0C73B8;;
 }
+
+input {
+    background: transparent;
+    font-size: 18px;
+    border-bottom: 1px solid #12F7D6;
+    width: 100%;
+}
+
+input::placeholder {
+    color: #ffffff;
+}
+
+input:focus {
+    outline: none;
+}
+

@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Yang - Frontend developer</title>
 </head>
@@ -37,8 +36,7 @@
             </div>
         </div>
     </header>
-    <main>
-        <section class="hero py-20">
+    <section class="hero py-20">
             <div class="contain">
                 <h1 class="text-center color-brand-2 text-7xl ubuntu">Developer</h1>
                 <div class="hero__content flex justify-center">                    
@@ -127,8 +125,9 @@
                     </div>
                 </div>
             </div>
-        </section>
-        <section class="about">
+    </section>
+    <div class="spacer"></div>
+    <section class="about">
             <div class="contain">
                 <div class="about__body py-44 flex justify-between gap-10 items-center">
                     <div class="w-[60%] z-50">
@@ -144,12 +143,13 @@
                         </div>
                     </div>
                     <div class="w-30% z-50">
-                        <img src="img/Image.png" alt="Developer" class="w-full">
+                        <img src="img/Image.png" alt="Developer" class="w-full" loading="lazzy">
                     </div>
                 </div>
             </div>
-        </section>
-        <section class="skills">
+    </section>
+    <div class="spacer"></div>
+    <section class="skills">
             <div class="contain py-44">
                 <div class="flex flex-col items-center gap-3 z-10 w-full">
                     <h1 class="color-brand text-[64px] ubuntu">Skills</h1>
@@ -204,11 +204,53 @@
                 </div>
                 
             </div>
-        </section>
-
-    </main>
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    </section>
+    <div class="spacer"></div>
+    <section class="contacts bg-2">
+            <div class="contain py-44">
+                <div class="flex flex-col items-center gap-3 z-10 w-full">
+                    <h1 class="color-brand text-[64px] ubuntu">Contact</h1>
+                    <span class="skills-title bg-[#12F7D6] w-40 block"></span>
+                    <p class="text-base">I’m currently available for freelance work</p>
+                </div>
+                <div class="flex justify-center">
+                    <h2 class="ubuntu text-[32px] border border-[4px] border-[#12F7D6] color-brand py-4 px-10 inline leading-base mt-12" style="border-radius: 50px 0 50px 0;">Send Me A Message</h2>
+                </div>
+                <div class="w-[60%] mx-auto mt-14">
+                    <form action="/mail" method="post">
+                        <div class="flex justify-between ubuntu gap-36">
+                            <div class="flex flex-col gap-4 w-full">
+                                <label for="name" class="color-brand text-light text-base">Your name</label>
+                                <input type="text" name="name" id="name" placeholder="Enter your name" required>
+                            </div>
+                            <div class="flex flex-col gap-4 w-full">
+                                <label for="name" class="color-brand text-light text-base">Your email</label>
+                                <input type="email" name="mail" id="mail" placeholder="Enter your email" required>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-4 w-full ubuntu mt-14">
+                            <label for="name" class="color-brand text-light text-base">Your message</label>
+                            <input type="text" name="message" id="message" placeholder="Enter your needs" required>
+                        </div>
+                        <div class="flex justify-center mt-20">
+                            <button type="submit" class="bio__button bg-3 rounded-full py-4 px-8">
+                                <a href="#" class="text-[#292F36] text-xl ubuntu flex gap-3 justify-center">Send Message 
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M22.7071 1.29292C22.9306 1.5164 23.0262 1.81935 22.9939 2.11081C22.9848 2.19252 22.9657 2.27332 22.9366 2.35121L15.9439 22.3304C15.8084 22.7174 15.4504 22.9825 15.0408 22.9992C14.6311 23.0159 14.2527 22.7808 14.0862 22.4062L10.2424 13.7576L1.59387 9.91384C1.21919 9.74731 0.984122 9.36894 1.00084 8.95926C1.01755 8.54959 1.28265 8.19162 1.66965 8.05617L21.6488 1.06348C21.7272 1.03414 21.8085 1.01497 21.8907 1.00598C21.9511 0.999338 22.0117 0.998262 22.0717 1.00259C22.3032 1.01913 22.5301 1.11591 22.7071 1.29292ZM18.1943 4.3915L4.71108 9.11063L10.7785 11.8073L18.1943 4.3915ZM12.1928 13.2215L19.6085 5.80571L14.8894 19.289L12.1928 13.2215Z" fill="currentColor"/>
+                                     </svg>
+                                </a>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+    </section>
+    <div class="spacer"></div>
+    <footer class="footer bg-2 border-t border-[#43454D] py-4">
+        <div class="contain">
+            <p class="text-center text-silver">© 2025 YangBang74. All rights reserved.</p>
+        </div>
+    </footer>
     <script src="js/main.js"></script>
 </body>
 </html>
